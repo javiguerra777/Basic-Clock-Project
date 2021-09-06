@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Clock, Project</title>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1 id = "caption">Pacific Standard Time</h1>
+  </div>
+  <div class="clock">
+    <span class = "clock-time"></span>
+    <span class = "clock-ampm"></span>
+  </div>
+  <div class="change">
+    <form name = "customForm" id = "timerSettings" action="submit">
+      <label for="minutes">Enter Number of Minutes</label>
+      <input type="text" id = "minute" class = "userInput" placeholder="example: 30">
+      <br>
+      <button>Click here to add a timer</button>
+    </form>
+  </div>
+  <div id="alarmClock">
+    <h1>Time Remaining</h1>
+    <hr>
+    <div class="display">
+      <h1 class = "display__time-left"></h1>
+    </div>
+  </div>
+</div>
+  <script src="sketch.js"></script>
+</body>
+</html>
